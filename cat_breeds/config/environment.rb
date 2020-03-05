@@ -1,6 +1,7 @@
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
+require 'HTTParty'
 
 require_relative '../lib/cat_breeds/scraper'
 require_relative '../lib/cat_breeds/restaurant'
