@@ -60,5 +60,5 @@ class CLI
         puts "Films" + character.films
     end
         
-    end
+    
 end
