@@ -10,12 +10,21 @@ class CLI
       puts "I've complied a list of characters from Studio Ghibli films."
       puts "Would you like to see the list?"
       puts "Type 'yes' to continue or 'no' to leave."
+      
+      user_input = gets.strip.downcase
+      
     
       if user_responds = "yes" || user_responds == "y"
           puts "Okay! I'll show you the list!" 
         
           display_the_characters
           ask_user_to_choose_character
+          
+          sleep(4)
+          puts "\n"
+          
+      else
+         puts "Bye! See you later!"
       end
     
   end
