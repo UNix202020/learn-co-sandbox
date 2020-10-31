@@ -43,11 +43,12 @@ class CLI
     
     def display_character_traits(character)
         sleep(2)
+        puts "\n"
         puts character.name
-        puts "Name" + |character.name|
-        puts "Gender" + |character.gender|
-        puts "Age" + |character.age|
-        puts "Films" + |character.films|
+        puts "Name" + character.name
+        puts "Gender" + character.gender
+        puts "Age" + character.age
+        puts "Films" + character.films
     end
         
     end
