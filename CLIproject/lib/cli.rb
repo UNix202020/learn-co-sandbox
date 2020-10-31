@@ -29,6 +29,8 @@ class CLI
     def ask_user_to_choose_character
       puts "Enter the number of the character you'd like to read about."
       index = gets.strip.to_i - 1
+      
+      character_instance = Character.all[index]
     end
     
   end
