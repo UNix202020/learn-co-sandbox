@@ -1,5 +1,5 @@
 class CHARACTER 
-  attr_accessor :Id, :name, :gender, :age, :eye_color, :hair_color, :films, :species, :url
+  attr_accessor :id, :name, :gender, :age, :eye_color, :hair_color, :films, :species, :url
   
   @@all =[]
   

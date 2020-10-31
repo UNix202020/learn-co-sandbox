@@ -19,6 +19,10 @@ class CLI
   end
   
   def display_the_characters
-    binding.pry
+    
+    Character.all.each.do |character|
+      puts character.name
+    end
+  end
   
 end
