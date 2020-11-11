@@ -2,10 +2,8 @@
 
 #require_relative "../environment"
 
-puts "Hello!"
-
 cli_instance = CLI.new
-cli_instance.start
+cli_instance.begin
 
 
 

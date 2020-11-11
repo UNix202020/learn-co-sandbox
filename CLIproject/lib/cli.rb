@@ -31,7 +31,7 @@ class CLI
   
   def display_the_characters
     
-    Character.all.each.with_index(1) do |character, index|
+    CHARACTER.all.each.with_index(1) do |character, index|
       puts "#{index}. #{character.name}"
     end
   end
@@ -40,12 +40,12 @@ class CLI
       puts "Enter the number of the character you'd like to read about."
       index = gets.strip.to_i - 1
       
-      until index.between?(0, Character.all.length - 1)
+      until index.between?(0, CHARACTER.all.length - 1)
         puts "Oops! I don't understand. Please enter a valid number."
         index = gets.strip.to_i - 1
       end
       
-      character_instance = Character.all[index]
+      character_instance = CHARACTER.all[index]
       
       display_character_traits(character_instance)
     end

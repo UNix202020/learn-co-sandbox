@@ -9,7 +9,7 @@ class API
       array_of_characters = hash["characters"]
       
       array_of_characters.each do |character_hash|
-        character = Character.new 
+        character = CHARACTER.new 
         character.name = character_hash["strCharacter"]
         character.gender = character_hash["strGender"]
         character.age = character_hash["strAge"]
