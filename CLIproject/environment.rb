@@ -3,6 +3,6 @@ require_relative "./lib/cli.rb"
 require_relative "./lib/character.rb"
 
 
-require 'pry'
+#require 'pry'
 require 'net/http'
 require 'json'

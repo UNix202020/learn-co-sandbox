@@ -13,8 +13,9 @@ class CLI
           puts "Fetching..."
           sleep(4)
           
-          display_characters
-          ask_user_choice
+      display_characters
+      ask_user_choice
+      
       else
          puts "ByeBye! See you later!"
          puts "\n"
@@ -30,11 +31,11 @@ class CLI
     
     def ask_user_choice
       puts "Enter the number of the character you'd like to read about."
-      index = gets.strip.to_i - 1
+      index = gets.strip.to_i-1
       
-      until index.between?(0, CHARACTER.all.length - 1)
+      until index.between?(0, CHARACTER.all.length-1)
         puts "Oops! I don't understand. Please enter a valid number."
-        index = gets.strip.to_i - 1
+        index = gets.strip.to_i-1
       end
       
       character_instance = CHARACTER.all[index]
@@ -68,5 +69,3 @@ class CLI
     end
         
 end
-
-
