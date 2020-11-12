@@ -29,7 +29,7 @@ class CLI
       
       list
     else
-      puts "Bye! I hope you found your character!"
+      puts "ByeBye!"
       puts "\n"
     end
     
@@ -72,6 +72,7 @@ class CLI
     puts "Age:"+character_instance.age
     puts "\n"
     puts "Films:"+character_instance.films
+    
   end
   
-end
+ end 
