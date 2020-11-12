@@ -1,10 +1,14 @@
 class CHARACTER 
-  attr_accessor :id, :name, :gender, :age, :eye_color, :hair_color, :films, :species, :url
+  attr_accessor :name,:gender,:age,:films
   
   @@all =[]
   
-  def initialize
+  def initialize(name, gender, age, films)
     @@all << self
+    @name=name
+    @gender=gender
+    @age=age
+    @films=films
   end
   
   def self.all

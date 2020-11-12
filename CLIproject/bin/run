@@ -3,7 +3,7 @@
 require_relative "../environment"
 
 cli_instance = CLI.new
-cli_instance.begin
+cli_instance.start
 
 
 

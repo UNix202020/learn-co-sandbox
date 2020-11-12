@@ -6,15 +6,16 @@ class API
       response = Net::HTTP.get(uri)
       hash = JSON.parse(response)
       
-      array_of_characters = hash["characters"]
+      array_of_characters = hash[1]
       
-      array_of_characters.each do |character_hash|
-        character = CHARACTER.new 
-        character.name = character_hash["strCharacter"]
-        character.gender = character_hash["strGender"]
-        character.age = character_hash["strAge"]
-        character.films = character_hash["strFilms"]
+      array_of_characters.each_with_index do |character_hash|
+        character = CHARACTER.new('name','gender','age','films')
+        
+        character.name = character_hash[1]
+        character.gender = character_hash[1]
+        character.age = character_hash[1]
+        character.films = character_hash[1]
+        character_hash
       end
-  end
-  
-end 
+end
+end
